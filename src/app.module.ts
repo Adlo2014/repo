@@ -4,6 +4,7 @@ import { ConfigModule } from '@nestjs/config';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { Module } from '@nestjs/common';
 import { ProductModule } from './product/product.module';
+import { WalletModule } from './wallet/wallet.module';
 
 @Module({
   imports: [
@@ -32,6 +33,8 @@ import { ProductModule } from './product/product.module';
     }),
 
     ProductModule,
+
+    WalletModule,
 
     
 
