@@ -5,6 +5,7 @@ import { SequelizeModule } from '@nestjs/sequelize';
 import { Module } from '@nestjs/common';
 import { ProductModule } from './product/product.module';
 import { WalletModule } from './wallet/wallet.module';
+import { PaymentModule } from './payment/payment.module';
 
 @Module({
   imports: [
@@ -35,6 +36,8 @@ import { WalletModule } from './wallet/wallet.module';
     ProductModule,
 
     WalletModule,
+
+    PaymentModule,
 
     
 
